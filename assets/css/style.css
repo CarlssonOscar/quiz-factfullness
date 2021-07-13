@@ -213,3 +213,46 @@ h1 {
 .option_list .option .icon.cross {
     color: #ad0e0e;
 }
+
+.quiz_box footer {
+    height: 60px;
+    max-width: 700px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz_box footer .total_que span {
+    display: flex;
+    user-select: none;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+.quiz_box footer .total_que span p {
+    padding: 0 5px;
+    display: inline-block; 
+}
+
+.total_que span p:first-child {
+    padding-left: 0px;
+}
+
+footer .next_btn {
+    font-family: "Quattrocento", helvetica, sans-serif;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer .next_btn:hover {
+    background-color: #ad0e0e;
+}
