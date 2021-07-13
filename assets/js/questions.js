@@ -32,7 +32,7 @@ let questions = [
 },
 {
     numb: 4,
-    question: "During the latset 20 years has the amount of people living in extreme poverty ...?",
+    question: "During the latest 20 years has the amount of people living in extreme poverty ...?",
     answer: "Almost been cut in half",
     options: [
         "Almost doubled",
