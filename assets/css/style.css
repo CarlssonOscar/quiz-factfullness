@@ -20,9 +20,11 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
 }
 
-.information_box.activeInfo {
+.information_box.activeInfo,
+.quiz_box.activeQuiz {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -91,6 +93,7 @@ h1 {
     margin: 0 10px;
     height: 40px;
     width: 140px;
+    outline: none;
     border-radius: 3px;
     font-size: 20px;
     cursor: pointer;
