@@ -256,3 +256,59 @@ footer .next_btn {
 footer .next_btn:hover {
     background-color: #ad0e0e;
 }
+
+.result_box {
+    background-color: white;
+    width: 500px;
+    padding: 30px 35px;
+    border-radius: 3px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.result_box .icon {
+    font-size: 120px;
+    color: #ad0e0e;
+    margin-bottom: 10px;
+}
+
+.result_box .complete_text {
+    font-size: 1.5rem;
+}
+
+.result_box .score_text span {
+    display: flex;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.score_text span p {
+   display: inline-block;
+   padding: 0 5px;
+}
+
+.result_box .buttons {
+    display: flex;
+    margin: 25px 0;
+}
+
+.result_box .buttons button {
+    margin: 0 10px;
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    background-color: #ad0e0e;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
