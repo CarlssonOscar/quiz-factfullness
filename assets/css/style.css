@@ -15,3 +15,95 @@ h1 {
     padding-top: 100px;
 }
 
+.begin_button, .information_box, .quiz_box, .result_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.begin_button button {
+    font-size: 3rem;
+    font-family: "Quattrocento", helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;    
+}
+
+.begin_button button:hover {
+    background-color: #ad0e0e;
+}
+
+.information_box {
+    width: 700px;
+    background-color: white;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.information_box .information_title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 25px;
+}
+
+.information_box .info_quiz {
+    padding: 20px 30px;
+}
+
+.information_box .info_quiz .info {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.information_box .info_quiz .info span{
+  color: #ad0e0e;
+}
+
+.information_box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 40px;
+    border-top: 1px solid white;
+}
+
+.information_box .buttons button {
+    margin: 0 10px;
+    height: 40px;
+    width: 140px;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Quattrocento", helvetica, sans-serif;
+    transition: all 0.3s easy;
+}
+
+.buttons button.continue {
+    color: black;
+    border-color: black;
+}
+
+.buttons button.continue:hover {
+    background-color: #ad0e0e;
+}
+
+.buttons button.quit {
+    color: black;
+    border-color: black;
+}
+
+.buttons button.quit:hover {
+    background-color: #ad0e0e;
+}
