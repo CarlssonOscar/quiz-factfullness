@@ -60,11 +60,14 @@ function optionSelected(answer) {
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
     if(userAns == correctAns){
+        answer.classList.add("correct");
         console.log("Correct!");
     } else {
+        answer.classList.add("incorrect")
         console.log("Wrong...")
     }
 }
+
 
 function queCounter(index) {
 const bottom_ques_counter = quiz_box.querySelector(".total_que");
