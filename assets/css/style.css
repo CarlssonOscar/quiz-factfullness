@@ -100,7 +100,7 @@ h1 {
     font-size: 1.3rem;
     cursor: pointer;
     font-family: "Quattrocento", helvetica, sans-serif;
-    transition: all 0.3s easy;
+    transition: all 0.3s ease;
 }
 
 .buttons button.continue {
@@ -353,7 +353,7 @@ h1 {
 }
 
 .begin_button button {
-padding 10px 20px;
+padding: 10px 20px;
 font-size: 2rem;
 }
 
@@ -390,14 +390,13 @@ footer .next_btn {
         width: 60px;
         font-size: 1rem;
     }
-    .quiz_box header .timer .timer_text{
+    .quiz_box header .timer .timer_text {
         font-size: 1rem;
     }
     .result_box .buttons button { 
         font-size: 1rem;
     }
-    }
-    .quiz_box header .title{
+    .quiz_box header .title {
     font-size: 1.3rem;
     }
     .quiz_box header .timer .timer_sec {

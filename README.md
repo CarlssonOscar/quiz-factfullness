@@ -10,7 +10,6 @@ The quiz is for anyone curious about the worlds prerequisites and our often in a
 # Existing Features
 
 
-
 ## Navigation bar
 
 ## Footer 
@@ -19,10 +18,7 @@ The quiz is for anyone curious about the worlds prerequisites and our often in a
 
 ## Second page
 
-
-
 ## Third page
-
 
 ## Fourth page
 
@@ -32,9 +28,6 @@ The quiz is for anyone curious about the worlds prerequisites and our often in a
  ## HTML
 
  ### index.html 
-
- * Becasue of how to the content was written several headings in not an option
- * The stray nav and stray tags was removed
 
  ![](assets/images/index.html-w3c-validaton.jpg)
 
@@ -69,7 +62,7 @@ The quiz is for anyone curious about the worlds prerequisites and our often in a
 
 # Credits
 
-The code for the quiz and timer was acquired through a tutorial on [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo&t=254s), [Youtube](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) it was later on modified to fit the site.      
+The code for the quiz and timer was acquired through parts of a tutorial on [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo&t=254s), [Youtube](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s). The tutorials code acted as a point of departure, the site was redesigned, certain parts of the code was eliminated, and the quiz was made responsive.     
 
 
 # Content
