@@ -93,17 +93,18 @@ h1 {
     margin: 0 10px;
     height: 40px;
     width: 140px;
+    color: white;
+    background-color: black;
     outline: none;
     border-radius: 3px;
-    font-size: 20px;
+    font-size: 1.3rem;
     cursor: pointer;
     font-family: "Quattrocento", helvetica, sans-serif;
     transition: all 0.3s easy;
 }
 
 .buttons button.continue {
-    color: black;
-    border-color: black;
+    color: white;
 }
 
 .buttons button.continue:hover {
@@ -111,8 +112,7 @@ h1 {
 }
 
 .buttons button.quit {
-    color: black;
-    border-color: black;
+    color: white;
 }
 
 .buttons button.quit:hover {
@@ -217,11 +217,11 @@ h1 {
 }
 
 .option_list .option .icon.tick {
-    color: rgb(15, 110, 15);
+    color: black;
 }
 
 .option_list .option .icon.cross {
-    color: #ad0e0e;
+    color: black;
 }
 
 .option_list .option.correct {
@@ -329,10 +329,13 @@ footer .next_btn:hover {
     outline: none;
     font-size: 1.3rem;
     border-radius: 3px;
-    background-color: #ad0e0e;
+    background-color: black;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+.result_box .buttons button:hover {
+    background-color: #ad0e0e;
 }
 
 /* Adpated for 13 inch laptop width */
