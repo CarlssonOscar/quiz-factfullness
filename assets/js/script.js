@@ -37,8 +37,22 @@ const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-quit_quiz.onclick = ()=> {
+// If try again button clicked
+restart_quiz.onclick = () => {
+    quiz_box.classList.add("activeQuiz");
+    result_box.classList.remove("activeResult");
+    que_count = 0;
+    que_numb = 1;
+    timeValue = 20;
+    userScore = 0;
+    showQuestions(que_count);
+    queCounter(que_numb);
+    clearInterval(counter);
+    startTimer(timeValue);
+}
 
+quit_quiz.onclick = () => {
+    window.location.reload();
 }
 
 // If next button
@@ -49,7 +63,7 @@ next_btn.onclick = () => {
         showQuestions(que_count);
         queCounter(que_numb);
         clearInterval(counter);
-        startTimer(20);
+        startTimer(timeValue);
     } else {
         console.log("You have finished the questions!");
         showResultBox();
@@ -89,10 +103,10 @@ function optionSelected(answer) {
         answer.classList.add("incorrect")
         console.log("Wrong...")
         answer.insertAdjacentHTML("beforeend", crossIcon);
-    
+
         // If wrong answer show correct
         for (let i = 0; i < allOptions; i++) {
-            if(option_list.children[i].textContent == correctAns){
+            if (option_list.children[i].textContent == correctAns) {
                 option_list.children[i].setAttribute("class", "option correct");
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
             }
@@ -100,32 +114,46 @@ function optionSelected(answer) {
 
     }
     // to enable one answer only
-        for(i=0; i < allOptions; i++){
-            option_list.children[i].classList.add("disabled");
+    for (i = 0; i < allOptions; i++) {
+        option_list.children[i].classList.add("disabled");
     }
 }
 
 function showResultBox() {
     information_box.classList.remove("activeInfo"); //hide
     quiz_box.classList.remove("activeQuiz"); // hide
-    result_box.classList.add("activeResult");// show
+    result_box.classList.add("activeResult"); // show
     const scoreText = result_box.querySelector(".score_text");
-    let scoreTag = '<span>Your score is <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>'; 
+    let scoreTag = '<span>Your score is <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
     scoreText.innerHTML = scoreTag;
 }
 
 function startTimer(time) {
     counter = setInterval(timer, 1000);
+
     function timer() {
         timeCount.textContent = time;
         time--;
-        if(time < 9){
+        if (time < 9) {
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero;
         }
-        if(time < 0){
+        if (time < 0) {
             clearInterval(counter);
             timeCount.textContent = "0";
+
+            let correctAns = questions[que_count].answer;
+            let allOptions = option_list.children.length;
+
+            for (let i = 0; i < allOptions; i++) {
+                if (option_list.children[i].textContent == correctAns) {
+                    option_list.children[i].setAttribute("class", "option correct");
+                    option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
+                }
+            }
+            for (i = 0; i < allOptions; i++) {
+                option_list.children[i].classList.add("disabled");
+            }
         }
     }
 }
