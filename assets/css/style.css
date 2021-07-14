@@ -96,6 +96,7 @@ h1 {
     color: white;
     background-color: black;
     outline: none;
+    border: none;
     border-radius: 3px;
     font-size: 1.3rem;
     cursor: pointer;
@@ -322,6 +323,7 @@ footer .next_btn:hover {
 }
 
 .result_box .buttons button {
+    font-family: "Quattrocento", helvetica, sans-serif;
     margin: 0 10px;
     height: 40px;
     padding: 0 20px;
@@ -367,6 +369,11 @@ font-size: 2rem;
 .quiz_box section .que_text {
     font-size: 1.3rem;
 }
+
+.quiz_box .option_list .option {
+    font-size: 1.3rem;
+}
+
 footer .next_btn {
     font-size: 1.3rem;
 }
@@ -376,6 +383,12 @@ footer .next_btn {
 }
 /* Adpated for tablet width */
 @media screen and (max-width: 800px) { 
+
+    .quiz_box, 
+.information_box, 
+.result_box{
+    margin-top: 50px;
+}
 
     .quiz_box section .que_text {
         font-size: 1rem;

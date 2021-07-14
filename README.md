@@ -1,4 +1,4 @@
-# Quiz Factfullness
+ttp# Quiz Factfullness
 
 The quiz factfulness quiz is based up on the information in the book factfullness by Hans Rosling, Anna Rosling Rönnlund and Ola Rosling. The book is in part a guide which covers the world and missconceptions about the world.
 The quiz is for anyone curious about the worlds prerequisites and our often in acqurate world views. 
