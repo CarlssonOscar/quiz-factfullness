@@ -24,7 +24,8 @@ h1 {
 }
 
 .information_box.activeInfo,
-.quiz_box.activeQuiz {
+.quiz_box.activeQuiz,
+.result_box.activeResult {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -42,7 +43,7 @@ h1 {
     border-radius: 3px;
     cursor: pointer;    
 }
-
+:disabled
 .begin_button button:hover {
     background-color: #ad0e0e;
 }

@@ -30,8 +30,16 @@ let que_count = 0;
 let que_numb = 1;
 let counter;
 let timeValue = 20;
+let userScore = 0;
 
 const next_btn = quiz_box.querySelector(".next_btn");
+const result_box = document.querySelector(".result_box");
+const restart_quiz = result_box.querySelector(".buttons .restart");
+const quit_quiz = result_box.querySelector(".buttons .quit");
+
+quit_quiz.onclick = ()=> {
+
+}
 
 // If next button
 next_btn.onclick = () => {
@@ -44,6 +52,7 @@ next_btn.onclick = () => {
         startTimer(20);
     } else {
         console.log("You have finished the questions!");
+        showResultBox();
     }
 }
 
@@ -51,7 +60,6 @@ next_btn.onclick = () => {
 function showQuestions(index) {
     const que_text = document.querySelector(".que_text");
     let que_tag = '<span>' + questions[index].numb + ". " + questions[index].question + '</span>';
-
     let option_tag = '<div class="option">' + questions[index].options[0] + '<span></span></div>' +
         '<div class="option">' + questions[index].options[1] + '<span></span></div>' +
         '<div class="option">' + questions[index].options[2] + '<span></span></div>';
@@ -72,6 +80,8 @@ function optionSelected(answer) {
     let correctAns = questions[que_count].answer;
     let allOptions = option_list.children.length;
     if (userAns == correctAns) {
+        userScore += 1;
+        console.log(userScore);
         answer.classList.add("correct");
         console.log("Correct!");
         answer.insertAdjacentHTML("beforeend", tickIcon);
@@ -90,10 +100,18 @@ function optionSelected(answer) {
 
     }
     // to enable one answer only
-
-    for (let i = 0; allOptions; i++) {
-        option_list.children[i].classList.add("disabled");
+        for(i=0; i < allOptions; i++){
+            option_list.children[i].classList.add("disabled");
     }
+}
+
+function showResultBox() {
+    information_box.classList.remove("activeInfo"); //hide
+    quiz_box.classList.remove("activeQuiz"); // hide
+    result_box.classList.add("activeResult");// show
+    const scoreText = result_box.querySelector(".score_text");
+    let scoreTag = '<span>Your score is <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>'; 
+    scoreText.innerHTML = scoreTag;
 }
 
 function startTimer(time) {
@@ -101,7 +119,6 @@ function startTimer(time) {
     function timer() {
         timeCount.textContent = time;
         time--;
-
         if(time < 9){
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero;
