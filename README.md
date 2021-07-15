@@ -6,7 +6,7 @@ The quiz is for anyone curious about the worlds prerequisites and our often inac
 ## index.html
 
 ![](assets/images/first-page.jpg)
-1[](assets/images/iphone.jpg)
+![](assets/images/iphone.jpg)
 ![](assets/images/wrong.jpg)
 ![](assets/images/complete.jpg)
 
@@ -18,6 +18,7 @@ The quiz is for anyone curious about the worlds prerequisites and our often inac
 ![](assets/images/w-finish.jpg)
 
 # Existing Features
+
 The site only has one page, the different parts of the quiz are stacked on top of each other with z-index.
 
 ## First page
@@ -72,11 +73,13 @@ The end quiz button transfers one to the first page.
  ## HTML
 
 Becasue of how the quiz was coded the lack of headings is not perceived as a cause of concern by the author.
+
  ![](assets/images/html-validator.jpg)
 
 ## CSS
 
 Not a relevant issue.
+
 ![](assets/images/html-validator.jpg)
 
 
@@ -126,6 +129,8 @@ Content was gathered from the book Factfulness [Gapminder]https://www.gapminder.
 # Media
 
 [Font Awesome](https://fontawesome.com/) was used for the icons through out the site.
+
+[Balsamiq](https://balsamiq.com/?gclid=Cj0KCQjwub-HBhCyARIsAPctr7wQznAyvCwj1BqakOs5Tj6TpmRorcxVV3mYBUTiIDIHkbidCibut_gaAqW0EALw_wcB) was used to make the wireframes.
 
 # Acknowledgements 
 
