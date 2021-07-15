@@ -10,16 +10,16 @@ The quiz is for anyone curious about the worlds prerequisites and our often inac
 ![](assets/images/wrong.jpg)
 ![](assets/images/complete.jpg)
 
-## Wire frames
+## Wireframes
 
-![](assets/images/w-first.jpg)
-![](assets/images/w-rules.jpg)
-![](assets/images/w-quiz.jpg)
-![](assets/images/w-finish.jpg)
+![](assets/images/w-first.png)
+![](assets/images/w-rules.png)
+![](assets/images/w-quiz.png)
+![](assets/images/w-finish.png)
 
 # Existing Features
 
-The site only has one page, the different parts of the quiz are stacked on top of each other with z-index.
+The site only has one page, the different parts of the quiz appear as they become relevant.
 
 ## First page
 
@@ -129,6 +129,8 @@ Content was gathered from the book Factfulness [Gapminder]https://www.gapminder.
 # Media
 
 [Font Awesome](https://fontawesome.com/) was used for the icons through out the site.
+
+# Tools
 
 [Balsamiq](https://balsamiq.com/?gclid=Cj0KCQjwub-HBhCyARIsAPctr7wQznAyvCwj1BqakOs5Tj6TpmRorcxVV3mYBUTiIDIHkbidCibut_gaAqW0EALw_wcB) was used to make the wireframes.
 
