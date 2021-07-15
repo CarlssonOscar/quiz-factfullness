@@ -3,14 +3,14 @@
 Quiz factfulness is based up on the information in the book factfullness by Hans Rosling, Anna Rosling Rönnlund and Ola Rosling. The book is in part a guide which covers information about the world and common missconceptions about the world.
 The quiz is for anyone curious about the worlds prerequisites and our often inacqurate world views. 
 
-## index.html
+# index.html
 
 ![](assets/images/first-page.jpg)
 ![](assets/images/iphone.jpg)
 ![](assets/images/wrong.jpg)
 ![](assets/images/complete.jpg)
 
-## Wireframes
+# Wireframes
 
 ![](assets/images/w-first.png)
 ![](assets/images/w-rules.png)
@@ -39,14 +39,14 @@ The quiz is comprised of 5 questions with 3 answers for each. The next question 
 
 ![](assets/images/quiz.jpg)
 
-### Timer
+## Timer
 
 Each question one is allowed 20 seconds to answer. If the answer is made within the first 10 seconds you will get 2 points for the right answer.
 If the timer goes out before an answer has been chosen one will be shown the correct answer.
 
 ![](assets/images/time-out.jpg)
 
-### Answers
+## Answers
 
 If one chooses the right answer the answer bar will turn green. A icon with a check mark icon will also apper in black, black was choosen so color blind people can recognize if the answer was right.
 If one chooses the wrong answer the answer bar will turn red. A icon with a cross will appear in black. The green bar and checkmark will also appear to show the right answer.
@@ -85,9 +85,10 @@ Not a relevant issue.
 
 ## JavaScript
 
-The code was tested with ![](https://jshint.com/), there was three type of warnings, non of which seems serious after consulting the projects mentor.
+The code was tested with [JSHint](https://jshint.com/), there was three type of warnings, non of which seems serious after consulting the projects mentor.
 
 ### script.js
+
 * 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 * 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
 * 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
@@ -96,12 +97,12 @@ The code was tested with ![](https://jshint.com/), there was three type of warni
 
 * 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 
-### Device testing
+# Device testing
 
 * Tested on Google Chrome, Firefox and Safari without issues.
 * Tested on Iphone 6 with chrome. Only issue is mentioned below.
 
-## Unfixed Bugs
+# Unfixed Bugs
 
 On a old Iphone (6) the green bar only appears when the wrong answer has been choosen. The bar which is supposed to be red turns grey. If the right answer is choosen the bar turns grey. Similar problems have not been present for Chrome, Safari or Firefox on a Mac computer.
 
