@@ -37,7 +37,7 @@ const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
-// If try again button clicked
+// If try again button
 restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz");
     result_box.classList.remove("activeResult");
@@ -84,10 +84,11 @@ function showQuestions(index) {
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
-
+// Appear in the optionSelected function after answer has been choosen
 let tickIcon = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIcon = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
+// When answer has been chosen, if statement with timeCount.textContent for extra point when answer is under 10 sec
 function optionSelected(answer) {
     clearInterval(counter);
     let userAns = answer.textContent;
@@ -122,6 +123,7 @@ function optionSelected(answer) {
     }
 }
 
+// Show score at end of quiz
 function showResultBox() {
     information_box.classList.remove("activeInfo"); //hide
     quiz_box.classList.remove("activeQuiz"); // hide
@@ -131,6 +133,7 @@ function showResultBox() {
     scoreText.innerHTML = scoreTag;
 }
 
+// Timer function
 function startTimer(time) {
     counter = setInterval(timer, 1000);
 
