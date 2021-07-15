@@ -68,9 +68,7 @@ The end quiz button transfers one to the first page.
 
 ## CSS
 
-* A semicolon was forgotten, now added
 
-![](assets/images/css-w3c-validaton.jpg)
 
 ### JavaScript
 
@@ -78,7 +76,7 @@ The end quiz button transfers one to the first page.
 
 ### Device testing
 
-* Tested on Google Chrome, Firefox and Safari without issues
+* Tested on Google Chrome, Firefox and Safari without issues.
 
 ## Unfixed Bugs
 
@@ -97,8 +95,7 @@ The end quiz button transfers one to the first page.
 
 # Credits
 
-The code for the quiz and timer was acquired through parts of a tutorial on [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo&t=254s), [Youtube](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s). The tutorials code acted as a point of departure, the site was redesigned, certain parts of the code was eliminated, and the quiz was made responsive.     
-
+The code for the quiz and timer was acquired through parts of a tutorial on [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo&t=254s), [Youtube](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s). The tutorials code acted as a point of departure.
 # Content
 
 Content was gathered from the book Factfulness [Gapminder]https://www.gapminder.org/factfulness-book/.
