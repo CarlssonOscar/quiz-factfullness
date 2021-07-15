@@ -17,6 +17,7 @@ h1 {
     padding-top: 200px;
 }
 
+/* Place buttons in center  */
 .begin_button,
 .information_box,
 .quiz_box,
@@ -28,6 +29,7 @@ h1 {
     transition: all 0.3s ease;
 }
 
+/* z_index to stack boxes  */
 .information_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult {
@@ -37,6 +39,7 @@ h1 {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/* All buttons has font family added, Quattrocento not present without */
 .begin_button button {
     font-size: 3rem;
     font-family: "Quattrocento", helvetica, sans-serif;
@@ -53,6 +56,7 @@ h1 {
     background-color: #ad0e0e;
 }
 
+/*  opacity 0, hidden until called by script.js, placed in center */
 .information_box {
     max-width: 700px;
     background-color: white;
@@ -94,6 +98,7 @@ h1 {
     padding: 0 40px;
 }
 
+/* All buttons has font family added, Quattrocento not present without */
 .information_box .buttons button {
     margin: 0 10px;
     height: 40px;
@@ -125,6 +130,7 @@ h1 {
     background-color: #ad0e0e;
 }
 
+/*  opacity 0, hidden until called by script.js, placed in center */
 .quiz_box {
     max-width: 700px;
     background-color: white;
@@ -182,6 +188,7 @@ h1 {
     background-color: white;
 }
 
+/* quiz box header */
 .quiz_box section .que_text {
     font-size: 2rem;
 }
@@ -191,6 +198,7 @@ h1 {
     display: block;
 }
 
+/* quiz box questions */
 .quiz_box .option_list .option {
     border: 1px solid black;
     border-radius: 3px;
@@ -212,6 +220,7 @@ h1 {
     margin-bottom: 0px;
 }
 
+/* Icons which appear when called on by script.js*/
 .option_list .option .icon {
     height: 25px;
     width: 26px;
@@ -222,18 +231,22 @@ h1 {
     pointer-events: none;
 }
 
+/* Black to ensure color blind can see if answer was right*/
 .option_list .option .icon.tick {
     color: black;
 }
 
+/* Black to ensure color blind can see if answer was wrong */
 .option_list .option .icon.cross {
     color: black;
 }
 
+/* Appear green after answer, if right */
 .option_list .option.correct {
     background-color: rgb(128, 197, 128);
 }
 
+/* Appear green after answer, if right */
 .option_list .option.incorrect {
     background-color: rgb(211, 100, 100);
 }
@@ -251,6 +264,7 @@ h1 {
     justify-content: space-between;
 }
 
+/* Inline-block to make span appear in same level as p */
 .quiz_box footer .total_que span {
     display: flex;
     user-select: none;
@@ -258,6 +272,7 @@ h1 {
     font-size: 1.3rem;
 }
 
+/* Inline-block to make span appear in same level as span */
 .quiz_box footer .total_que span p {
     padding: 0 5px;
     display: inline-block;
@@ -285,9 +300,10 @@ footer .next_btn:hover {
     background-color: #ad0e0e;
 }
 
+/* Shows result after completing quiz. Opacity 0, hidden until called by script.js, placed in center */
 .result_box {
     background-color: white;
-    max-width: 500px;
+    max-width: 700px;
     padding: 30px 35px;
     border-radius: 3px;
     display: flex;
@@ -300,6 +316,7 @@ footer .next_btn:hover {
     transform: translate(-50%, -50%) scale(0.9);
 }
 
+/* Show the globe in the end of the quiz, red color to keep design consistent */
 .result_box .icon {
     font-size: 120px;
     color: #ad0e0e;
@@ -327,6 +344,7 @@ footer .next_btn:hover {
     margin: 25px 0;
 }
 
+/* All buttons has font family added, Quattrocento not present without */
 .result_box .buttons button {
     font-family: "Quattrocento", helvetica, sans-serif;
     margin: 0 10px;
@@ -346,7 +364,7 @@ footer .next_btn:hover {
     background-color: #ad0e0e;
 }
 
-/* Adpated for 13 inch laptop width */
+/* Adpated for 13 inch laptop width, mostly smaller font-sizes, lesser margins, smaller widths */
 @media screen and (max-width: 1280px) {
 
     h1 {
@@ -390,14 +408,8 @@ footer .next_btn:hover {
     }
 }
 
-/* Adpated for tablet width */
+/* Adpated for tablet width, mostly smaller font-sizes */
 @media screen and (max-width: 800px) {
-
-    .quiz_box,
-    .information_box,
-    .result_box {
-        margin-top: 70px;
-    }
 
     .information_box .info_quiz .info {
         font-size: 1.0rem;
@@ -406,7 +418,7 @@ footer .next_btn:hover {
     .information_box .buttons button {
         font-size: 1rem;
     }
-    
+
     .quiz_box section .que_text {
         font-size: 1rem;
     }
@@ -428,6 +440,7 @@ footer .next_btn:hover {
         font-size: 1rem;
     }
 
+    /*  resizes timer text*/
     .quiz_box header .timer .timer_text {
         font-size: 1rem;
     }
@@ -440,6 +453,7 @@ footer .next_btn:hover {
         font-size: 1.3rem;
     }
 
+    /*  Resize timer*/
     .quiz_box header .timer .timer_sec {
         font-size: 1rem;
         height: 25px;

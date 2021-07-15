@@ -4,7 +4,6 @@ const quit_btn = information_box.querySelector(".buttons .quit");
 const continue_btn = information_box.querySelector(".buttons .continue");
 const quiz_box = document.querySelector(".quiz_box");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
-
 const option_list = document.querySelector(".option_list");
 
 // If begin button
