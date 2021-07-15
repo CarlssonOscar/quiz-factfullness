@@ -80,7 +80,7 @@ Becasue of how the quiz was coded the lack of headings is not perceived as a cau
 
 Not a relevant issue.
 
-![](assets/images/html-validator.jpg)
+![](assets/images/css-validator.jpg)
 
 
 ## JavaScript
