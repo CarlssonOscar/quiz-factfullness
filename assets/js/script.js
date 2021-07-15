@@ -127,7 +127,7 @@ function showResultBox() {
     quiz_box.classList.remove("activeQuiz"); // hide
     result_box.classList.add("activeResult"); // show
     const scoreText = result_box.querySelector(".score_text");
-    let scoreTag = '<span>Your score is <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+    let scoreTag = '<span>Your score is <p>' + userScore + '</p> out of <p>10</p></span>';
     scoreText.innerHTML = scoreTag;
 }
 
