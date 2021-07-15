@@ -12,7 +12,10 @@ The quiz is for anyone curious about the worlds prerequisites and our often inac
 
 ## Wire frames
 
-![]()
+![](assets/images/w-first.jpg)
+![](assets/images/w-rules.jpg)
+![](assets/images/w-quiz.jpg)
+![](assets/images/w-finish.jpg)
 
 # Existing Features
 The site only has one page, the different parts of the quiz are stacked on top of each other with z-index.
