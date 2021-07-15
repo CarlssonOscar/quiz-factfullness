@@ -6,20 +6,16 @@ The quiz is for anyone curious about the worlds prerequisites and our often inac
 ## index.html
 
 ![](assets/images/first-page.jpg)
+1[](assets/images/iphone.jpg)
 ![](assets/images/wrong.jpg)
 ![](assets/images/complete.jpg)
 
-
 ## Wire frames
 
-![](assets/images/why-balsamiq.jpg)
+![]()
 
 # Existing Features
 The site only has one page, the different parts of the quiz are stacked on top of each other with z-index.
-
-## 
-
-## 
 
 ## First page
 
@@ -33,7 +29,7 @@ The second part is the rules part. You provided the rules for the quiz as well a
 
 ![](assets/images/rules.jpg)
 
-## quiz pages
+## Quiz pages
 
 The quiz is comprised of 5 questions with 3 answers for each. The next question appers after Next Que (Question) has been clicked. How many questions their are and how many you have answered is shown in the left corner. 
 
@@ -60,30 +56,48 @@ The end quiz button transfers one to the first page.
 
 ![](assets/images/complete.jpg)
 
+# Future features
+
+* Add more questions, and possibly changing questions frequently.
+
+* Add the possiblity of creating a user.
+
+* Add a scoreboard to keep track of users scores. 
 
  # Testing
 
  ## HTML
 
- ### index.html 
-
- ![](assets/images/index.html-w3c-validaton.jpg)
+Becasue of how the quiz was coded the lack of headings is not perceived as a cause of concern by the author.
+ ![](assets/images/html-validator.jpg)
 
 ## CSS
 
+Not a relevant issue.
+![](assets/images/html-validator.jpg)
 
 
-### JavaScript
+## JavaScript
 
+The code was tested with ![](https://jshint.com/), there was three type of warnings, non of which seems serious after consulting the projects mentor.
 
+### script.js
+* 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+* 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+* 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+### questions.js
+
+* 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 
 ### Device testing
 
 * Tested on Google Chrome, Firefox and Safari without issues.
+* Tested on Iphone 6 with chrome. Only issue is mentioned below.
 
 ## Unfixed Bugs
 
-
+On a old Iphone (6) the green bar only appears when the wrong answer has been choosen. The bar which is supposed to be red turns grey. If the right answer is choosen the bar turns grey. Similar problems have not been present for Chrome, Safari or Firefox on a Mac computer.
 
 # Deployment
 
@@ -94,11 +108,14 @@ The end quiz button transfers one to the first page.
 5. Make sure the Enforce HTTPS box is checked
 6. Click save to publish
 
- Here is a link to the finished website [Quiz Factfullness](https://carlssonoscar.github.io/quiz-factfullness/)
+ Here is a link to the finished website [Quiz Factfullness](https://carlssonoscar.github.io/quiz-factfullness/).
 
 # Credits
 
-The code for the quiz and timer was acquired through parts of a tutorial on [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo&t=254s), [Youtube](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s). The tutorials code acted as a point of departure.
+The code for the quiz was acquired through parts of a tutorial on [Youtube](https://www.youtube.com/watch?v=pQr4O1OITJo&t=254s), [Youtube](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s).
+
+The code for removing the presets in the reset.css file was found on ![](https://meyerweb.com/eric/tools/css/reset/).
+
 # Content
 
 Content was gathered from the book Factfulness [Gapminder]https://www.gapminder.org/factfulness-book/.
@@ -106,10 +123,6 @@ Content was gathered from the book Factfulness [Gapminder]https://www.gapminder.
 # Media
 
 [Font Awesome](https://fontawesome.com/) was used for the icons through out the site.
-
-# Tools
-
- [Balsamiq](https://balsamiq.com/) was used to make the wireframes.
 
 # Acknowledgements 
 
